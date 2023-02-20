@@ -1,0 +1,77 @@
+#include<stdio.h>
+int main()
+{
+    int mat[20][20],b[20][20],C[20][20],m,n,i,j;
+    printf("Enter Number of row:");
+    scanf("%d",&m);
+    printf("Enter Number of colunm:");
+    scanf("%d",&n);
+
+
+    for(i=0;i<m;i++)
+    {
+
+        for(j=0;j<n;j++)
+        {
+            printf("Enter Array element for index mat[%d][%d]:",i,j);
+            scanf("%d",&mat[i][j]);
+        }
+        printf("\n");
+    }
+
+
+    for(i=0;i<m;i++)
+    {
+        //printf("Enter Array element for index mat[%d][%d]:");
+        for(j=0;j<n;j++)
+        {
+            printf("%d\t",mat[i][j]);
+        }
+        printf("\n");
+    }
+    printf("Enter Number of row:");
+    scanf("%d",&m);
+    printf("Enter Number of colunm:");
+    scanf("%d",&n);
+
+
+    for(i=0;i<m;i++)
+    {
+
+        for(j=0;j<n;j++)
+        {
+            printf("Enter Array element for index b[%d][%d]:",i,j);
+            scanf("%d",&b[i][j]);
+        }
+        printf("\n");
+    }
+    for(i=0;i<m;i++)
+    {
+        //printf("Enter Array element for index mat[%d][%d]:");
+        for(j=0;j<n;j++)
+        {
+            printf("%d\t",b[i][j]);
+        }
+        printf("\n");
+    }
+
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            C[i][j]=mat[i][j] + b[i][j];
+        }
+        printf("\n");
+    }
+    printf("C = ");
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            printf("\t%d\t",C[i][j]);
+        }
+        printf("\n");
+
+    }
+}
+
